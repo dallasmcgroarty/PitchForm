@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project Form</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body class="container">
+        <header>
+            <h1>Project Form</h1>
+        </header>
+        <div class="panel-body">
+            <form>
+                <fieldset class="team-members">
+                    <legend>Write your name and your partner's name here:</legend>
+                    <div class="form-group row">
+                        <label for="team-1">1. </label>
+                        <input type="text" name="one" id="team-1">
+                    </div>
+                    <div class="form-group row">
+                        <label for="team-2">2. </label>
+                        <input type="text" name="two" id="team-2">
+                    </div>
+                </fieldset>
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#addMember" aria-expanded="false" aria-controls="addMember">
+                        Add Third Member
+                </button>
+                <div id="addMember" class="collapse">
+                    <div class="form-group row">
+                        <label for="team-3">3.</label>
+                        <input type="text" name="three" id="team-3">
+                    </div>
+                    <div class="form-group row">
+                            <label for="approval">Instructor Initials: </label>
+                            <input type="text" name="initials" id="approval">
+                    </div>
+                </div>
+                <fieldset class="team-or-app">
+                    <legend>Choose a name for your web app or a team name instead</legend>
+                    <div class="radio">
+                        <label for="appName">
+                            <input type="radio" name="radioBtn" value="Appname" data-toggle="collapse" data-target="#app-name" aria-expanded="false" aria-controls="#app-name" autocomplete="off">
+                            App name
+                        </label>
+                    </div>
+                    <div id="app-name" class="collapse">
+                            <input type="text" name="app-input" id="appName">
+                    </div>
+                    <div class="radio">
+                        <label for="teamName">
+                            <input type="radio" name="radioBtn" value="Teamname" data-toggle="collapse" data-target="#team-name" aria-expanded="false" aria-controls="#team-name" autocomplete="off">
+                            Team name
+                        </label>
+                    </div>
+                    <div id="team-name" class="collapse">
+                        <input type="text" name="team-input" id="teamName">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
